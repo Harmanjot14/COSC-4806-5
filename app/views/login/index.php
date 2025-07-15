@@ -33,9 +33,10 @@
 		</div>
 	</div>
 	
-  <?php require_once 'app/views/templates/footer.php' ?>
-	
+</main>	
 	<?php if (isset($_SESSION['error'])): ?>
 		<p style="color: red;"><?php echo $_SESSION['error']; ?></p>
 		<?php unset($_SESSION['error']);?>
 	<?php endif;?>
+	
+	<?php require_once 'app/views/templates/footer.php' ?>
