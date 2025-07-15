@@ -52,6 +52,7 @@
       </table>   
       <br><br>
   </div>
+</div>
 
   
   <!-- Error messages -->
