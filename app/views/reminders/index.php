@@ -52,7 +52,7 @@
       </table>   
       <br><br>
   </div>
-</div>
+
 
   
   <!-- Error messages -->
@@ -70,6 +70,8 @@
     </div>
     <?php unset($_SESSION['success']); ?>
   <?php endif; ?>
+
+  </div>
 
   <?php require_once 'app/views/templates/footer.php' ?>
     
