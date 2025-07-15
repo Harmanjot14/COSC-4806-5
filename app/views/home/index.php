@@ -9,12 +9,6 @@
             </div>
         </div>
     </div>
-
-    <div class="row">
-        <div>
-            <p> <a href="/logout">Click here to logout</a></p>
-        </div>
-    </div>
 </div>
 </div>
 
