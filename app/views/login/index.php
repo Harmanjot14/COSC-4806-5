@@ -32,14 +32,12 @@
 			</form> 
 			<p>Don't have an account? <a href ="/create/index">Sign up</a></p>
 		</div>
+		<?php if (isset($_SESSION['error'])): ?>
+			<p style="color: red;"><?php echo $_SESSION['error']; ?></p>
+			<?php unset($_SESSION['error']);?>
+		<?php endif;?>
 	</div>
-	</div>
-
-
-	<?php if (isset($_SESSION['error'])): ?>
-		<p style="color: red;"><?php echo $_SESSION['error']; ?></p>
-		<?php unset($_SESSION['error']);?>
-	<?php endif;?>
+	</div>	
 </main>	
 	
 	<?php require_once 'app/views/templates/footer.php' ?>
