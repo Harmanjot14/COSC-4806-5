@@ -4,6 +4,13 @@ body{
   margin: 0;
   padding: 0;
 }
+.page-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 63vh;;    
+    margin: 0;
+    padding: 0
+}
 /*for home/index.php*/
 .home{
     margin: 0;
