@@ -16,13 +16,17 @@
         <p>Harmanjot Kaur &copy; <?php echo date('Y'); ?> </p>
        
         <script>
-            document.getElementById('contact-toggle').addEventListener('click', function(){
-                var contactInfo = document.getElementById('contact-info');
-                contactInfo.style.display = (contactInfo.style.display === 'none') ? 'block' : 'none';
-            });
-            document.getElementById('about-toggle').addEventListener('click', function(){
-                var aboutInfo = document.getElementById('about-info');
-                aboutInfo.style.display = (aboutInfo.style.display === 'none') ? 'block' : 'none';
+            document.addEventListener('DOMContentLoaded', function () {
+                document.getElementById('contact-toggle').addEventListener('click', function(){
+                    event.preventDefault();
+                    var contactInfo = document.getElementById('contact-info');
+                    contactInfo.style.display = (contactInfo.style.display === 'none') ? 'block' : 'none';
+                });
+                document.getElementById('about-toggle').addEventListener('click', function(){
+                    event.preventDefault();
+                    var aboutInfo = document.getElementById('about-info');
+                    aboutInfo.style.display = (aboutInfo.style.display === 'none') ? 'block' : 'none';
+                });
             });
         </script>                                                              
     </div>
