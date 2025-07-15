@@ -1,6 +1,8 @@
+<?php session_start(); ?>
+
 <?php require_once 'app/views/templates/headerPublic.php'?>
 
-<?php session_start(); ?>
+
 
 <main role="main" class="login-container">
 	<div class="page-container">
