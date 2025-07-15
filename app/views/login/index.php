@@ -3,6 +3,7 @@
 <?php session_start(); ?>
 
 <main role="main" class="login-container">
+	<div class="page-container">
   <div class="page-header" id="banner">
       <div class="row">
         <div>
@@ -31,6 +32,7 @@
 			</form> 
 			<p>Don't have an account? <a href ="/create/index">Sign up</a></p>
 		</div>
+	</div>
 	</div>
 
 
