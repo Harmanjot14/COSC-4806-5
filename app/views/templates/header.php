@@ -32,9 +32,11 @@ if (!isset($_SESSION['auth'])) {
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
             </li>
+            <li class="nav-item"><a href="/logout">Logout</a></li>
           </ul>
         </div>
       </nav>
+  
      <script>
         document.addEventListener('DOMContentLoaded', function(){
           var dropdown = document.querySelector('.dropdown-toggle');
