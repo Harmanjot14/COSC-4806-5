@@ -16,6 +16,18 @@ body{
     margin: 0;
     padding: 10px;
 }
+/*HomePublic*/
+.public-list{
+    list-style-type: disc;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #333;
+}
+.sub-list{
+    list-style-type: decimal;
+}
 
 /*Navigation bar*/
 .navbar{
