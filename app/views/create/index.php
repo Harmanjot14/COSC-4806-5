@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="/style.css">
-  </head>
-  <body>        
-    <?php
-      session_start();
-    ?>
+<?php session_start(); ?>
+
+<?php require_once 'app/views/templates/headerPublic.php'?>
+
+  <div class="page-container">
     <div class="signup">
       <h1>Sign Up</h1>
       <form method="post" action="/create/save">
@@ -37,8 +32,6 @@
         <?php unset($_SESSION['success']);?>
       <?php endif;?> 
     </div>
+  </div>
     
-    
-    
-  </body>  
-</html>
+    <?php require_once 'app/views/templates/footer.php'?>
