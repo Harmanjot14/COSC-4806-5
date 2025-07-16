@@ -12,7 +12,7 @@
                         <li>To track your task progress you can use buttons: 
                             <ul class="sub-list">
                                 <li><strong>Add button:</strong> to add a new task</li>
-                                <li><strong>Edit button:</strong> to edit an existing task</li>
+                                <li><strong>Update button:</strong> to edit an existing task</li>
                                 <li><strong>Delete button:</strong> to delete an existing task</li>
                                 <li><strong>Complete button:</strong> to mark a task as completed</li>
                             </ul>

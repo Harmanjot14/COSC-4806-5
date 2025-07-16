@@ -23,6 +23,12 @@ if (!isset($_SESSION['auth'])) {
           <ul>
             <li class="nav-item"><a href="/home">Home</a></li>
             <li class="nav-item"><a href="/reminders">Reminders</a></li>
+  
+            <!-- Adding reports for admin -->
+            <?php if ($_SESSION['username'] == 'Admin') : ?>
+              <li class="nav-item"><a href="/reports">Reports</a></li>
+            <?php endif;?>
+            
             <li class="nav-item">
               <a href="#" class="dropdown-toggle">Dropdown</a>
                 <ul class="dropdown-menu">
