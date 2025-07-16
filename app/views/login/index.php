@@ -6,13 +6,13 @@
 
 <main role="main" class="login-container">
 	<div class="page-container">
-  <div class="page-header" id="banner">
-      <div class="row">
-        <div>
-           <h1>Login</h1>
-        </div>
-       </div>
-  </div>
+	  <div class="page-header" id="banner">
+	      <div class="row">
+	        <div>
+	           <h1>Login</h1>
+	        </div>
+	       </div>
+	  </div>
 
 	<div class="row">
     <div>
