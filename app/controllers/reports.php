@@ -4,11 +4,9 @@
   
     public function index() {		
       session_start();
-      if (!isset($_SESSION['auth']) || $_SESSION['auth']['username'] !== 'admin') {
-        header('Location: /login');
-        exit;
-      }
-      $this->view('reports/index');
+      $reminder = $this->model('Reminder');
+      $reminders_list = $reminder->get_all_reminders();
+      $this->view('reports/index', ['reminders' => $reminders_list]);
     
     }
   }
