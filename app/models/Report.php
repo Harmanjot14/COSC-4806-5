@@ -33,6 +33,15 @@ class Report{
         return $row['count'];
     }
 
+    //to get the number of reminder per user
+    public function get_number_of_reminders_per_user(){
+        $db = db_connect();
+        $statement = $db->prepare("SELECT user_id, COUNT(*) as count FROM reminders GROUP BY user_id");
+        $statement->execute();
+        $row = $statement->fetchAll(PDO::FETCH_ASSOC);
+        return $row;
+    }
+
     
 }
 
