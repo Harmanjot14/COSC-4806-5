@@ -88,12 +88,22 @@
                           <tr>
                             <th>Username</th>
                             <th>Number of Logins</th>
+                            <th>Good Attempts</th>
+                            <th>Bad Attempts</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td><?php echo $_SESSION['username']; ?></td>
-                            <td><?php echo $data['totalLogins'];?></td>
+                            <?php
+                              foreach ($data['totalLogins'] as $login){
+                                  echo "<tr>";
+                                  echo "<td>" . $login['username'] . "</td>";
+                                  echo "<td>" . $login['count'] . "</td>";
+                                  echo "<td>" . $login['good_attempts'] . "</td>";
+                                  echo "<td>" . $login['bad_attempts'] . "</td>";
+                                  echo "</tr>";
+                              }
+                            ?>
                           </tr>
                         </tbody>
                       </table>
