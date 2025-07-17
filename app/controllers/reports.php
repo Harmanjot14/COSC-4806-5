@@ -16,6 +16,13 @@
       $this->view('reports/index', ['reminders' => $reminders_list, 'mostReminders' => $most_reminders, 'totalLogins' => $total_logins]);
       
     }
+
+    public function chart(){
+      session_start();
+      $report = $this->model('Report');
+      $chart_data = $report->get_number_of_reminders_per_user();
+      $this->view('reports/chart', ['reminders' => $chart_data]);      
+    }
   }
 
 ?>
