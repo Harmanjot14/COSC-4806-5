@@ -2,12 +2,12 @@
 <footer class="footer">    
     <div class="footer-content">
         <ul class="footer-links">
-            <li><a href="#" id="contact-toggle" class="mx-2">Contact Info</a></li>
-            <div id="contact-info" style="display: none;" class="mt-2">
+            <li><a href="#" id="contact-toggle">Contact Info</a></li>
+            <div id="contact-info" style="display: none;">
                 <p>Email: harmanjotkaur005@algomau.ca</p>
             </div>
-            <li><a href = "#" id = "about-toggle" class="mx-2">About</a></li>
-            <div id="about-info" style="display: none;" class="mt-2">
+            <li><a href = "#" id = "about-toggle">About</a></li>
+            <div id="about-info" style="display: none;">
                 <p>A simple reminder app built using PHP and MySQL during the course Web Data Management</p>
             </div>
             <li><a href="https://www.linkedin.com/in/harmanjot-kaur-41b6b7180/">LinkedIn</a></li>
