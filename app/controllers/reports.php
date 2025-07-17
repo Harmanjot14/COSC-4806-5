@@ -21,7 +21,8 @@
       session_start();
       $report = $this->model('Report');
       $chart_data = $report->get_number_of_reminders_per_user();
-      $this->view('reports/chart', ['reminders' => $chart_data]);      
+      $login_data = $report->get_login_attempts_per_user();
+      $this->view('reports/chart', ['reminders' => $chart_data, 'login_attempts' => $login_data]);      
     }
   }
 
