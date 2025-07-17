@@ -232,6 +232,9 @@ body{
 }
 
 /*for breadcrumb*/
+.breadcrumb{
+    margin-left: -35px;
+}
 .breadcrumb-item{
     display: inline-block;
     font-size: 18px;
