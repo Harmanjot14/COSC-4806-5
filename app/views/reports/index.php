@@ -8,11 +8,12 @@
         <li class="breadcrumb-item active" aria-current="page">Reports</li>
       </ol>
     </nav>
- 
+  
+   
     <div class="page-header" id="banner">
       <h1>Reports</h1>
       <br>
-      <a href = "/reports/chart"><button>View Charts</button></a>
+      <a href = "/reports/chart"><button class="btn btn-primary btn-lg">View Charts</button></a>
       <br><br>
       <div class="row">
             <!-- Using card component of Bootstrap -->
@@ -110,7 +111,6 @@
                     </div>
                   </div>
                 </div>
-          
       </div> 
   </div>
 </div>
