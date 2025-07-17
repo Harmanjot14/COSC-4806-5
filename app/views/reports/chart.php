@@ -13,7 +13,7 @@
       </ol>
     </nav>
   
-    <div class="container">
+    <div class="page-container">
       <div class="page-header" id="banner">
         <h1>Charts</h1>
         <br>
@@ -72,7 +72,7 @@
             </div>
           </div>
         </div>      
-      <br><br><br>
+      <br>
 
       <!--Second Chart-->
       <div class="row">
