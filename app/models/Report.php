@@ -42,6 +42,16 @@ class Report{
         return $row;
     }
 
+    //login attempts good or bad per user
+    public function get_login_attempts_per_user(){
+        $db = db_connect();
+        $statement = $db->prepare("SELECT username, SUM(CASE WHEN status = 'Good' THEN 1 ELSE 0 END) as good_attempts, SUM(CASE WHEN status = 'Bad' THEN 1 ELSE 0 END) as bad_attempts FROM login_attempts GROUP BY username");
+        $statement->execute();
+        $row = $statement->fetchAll(PDO::FETCH_ASSOC);
+        return $row;
+        
+    }
+
     
 }
 
