@@ -11,6 +11,9 @@
  
     <div class="page-header" id="banner">
       <h1>Reports</h1>
+      <br>
+      <a href = "/reports/chart"><button>View Charts</button></a>
+      <br><br>
       <div class="row">
             <!-- Using card component of Bootstrap -->
               <!-- To view all the reminders -->
@@ -102,10 +105,5 @@
   </div>
 </div>
   
-
-
-
-
-
 
 <?php require_once 'app/views/templates/footer.php' ?>
