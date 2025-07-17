@@ -15,6 +15,9 @@ if (!isset($_SESSION['auth'])) {
         <!-- Added CSS style -->
         <link rel="stylesheet" href="/style.css">
       
+        <!-- Added Bootstrap CSS -->  
+        <link rel="stylesheet" href="/bootstrap.min.css">     
+      
     </head>
     <body>
       <nav class="navbar">
