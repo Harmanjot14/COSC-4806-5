@@ -236,7 +236,7 @@ body{
 
 /*for breadcrumb*/
 .breadcrumb{
-    margin-left: -35px;
+    margin-left: 0;
 }
 .breadcrumb-item{
     display: inline-block;
