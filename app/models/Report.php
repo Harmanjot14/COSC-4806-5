@@ -24,13 +24,14 @@ class Report{
     }
 
     //to get how many total logins by username
-    public function get_total_logins_by_username($username){
+    public function get_total_logins_by_username(){
         $db = db_connect();
-        $statement = $db->prepare("SELECT COUNT(*) as count FROM login_attempts WHERE username = :username");
-        $statement->bindParam(':username', $username);
+        $statement = $db->prepare("SELECT username, COUNT(*) as count, SUM(CASE WHEN status = 'Good' THEN 1 ELSE 0 END) AS good_attempts,
+               SUM(CASE WHEN status = 'Bad' THEN 1 ELSE 0 END) AS bad_attempts
+ FROM login_attempts GROUP BY username");
         $statement->execute();
-        $row = $statement->fetch(PDO::FETCH_ASSOC);
-        return $row['count'];
+        $row = $statement->fetchAll(PDO::FETCH_ASSOC);
+        return $row;
     }
 
     //to get the number of reminder per user
