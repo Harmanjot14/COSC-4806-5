@@ -2,6 +2,13 @@
 
 
 <div class="reminder_container">
+  <!-- breadcrumb -->  
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Reminders</li>
+    </ol>
+  </nav>
   <div class="page-header" id="banner">
       <div class="row">
         <div>
